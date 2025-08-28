@@ -1,0 +1,15 @@
+:root {
+    --bg-primary: #f7f7f6;
+    --bg-secondary: #011731;
+
+    --text-primary: #393B40;
+    --text-secondary: #DEBC60;
+    --text-tertiary: #9eacb8;
+
+    --button-primary: #393B40;
+    --button-secondary: #f5f5f5;
+
+    --border-primary: #393B40;
+    --border-secondary: #f5f5f5;
+    --border-tertiary: #DEBC60;
+}

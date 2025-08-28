@@ -1,0 +1,89 @@
+.advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 10% 5rem;
+    width: 100%;
+    background: linear-gradient(135deg,rgba(232, 236, 248, 1) 0%, rgba(198, 204, 238, 1) 40%, rgb(250, 255, 165) 100%);
+}
+
+.advantages h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.advantages ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 0;
+    width: 100%;
+}
+
+.advantages ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 20rem;
+    height: 15rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+.advantages ul li h3,
+.advantages ul li p {
+    margin: 0;
+    text-align: center;
+}
+
+.advantages .blabla {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+}
+
+.advantages .blabla .left {
+    padding-right: 1rem;
+    width: 20%;
+    border-right: 1px solid var(--border-tertiary);
+}
+
+.advantages .blabla .left h2 {
+    margin: 0;
+    text-align: right;
+}
+
+.advantages .blabla .left h2 span {
+    color: var(--text-secondary);
+}
+
+.advantages .blabla .right {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 80%;
+}
+
+.advantages .blabla .right .title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.advantages .blabla .right .text {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
