@@ -10,7 +10,6 @@
     width: 80%;
     z-index: 1000;
     background-color: #f7f7f6;
-
 }
 
 .navbar__img {
@@ -23,7 +22,7 @@
     align-items: center;
     padding: .5rem 0;
     background-color: #f7f7f6;
-    transition: all 0.3s;
+    transition: all 0.1s;
 
 }
 
@@ -36,10 +35,14 @@
 }
 
 .navbar__upper ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     padding: 0.5rem 1rem;
     border-radius: 5rem;
     text-decoration: none;
     color: var(--text-primary);
+    transition: all 0.1s;
 }
 
 .navbar__upper ul li a:hover {
@@ -52,19 +55,20 @@
     color: white;
     text-decoration: none;
     border: none;
-    border-radius: .25rem;
+    border-radius: 5rem;
     cursor: pointer;
 }
 
 .navbar.sticky{
-    background-color: white;
-    border-radius: .5rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    transition: all .1s;
 }
 
 .navbar.sticky .navbar__upper {
     padding: .5rem 1rem;
     background-color: white;
-    border-radius: .5rem;
+    border-radius: 1rem;
 }
 
 
@@ -73,21 +77,24 @@
     justify-content: center;
     align-items: start;
     gap: 3rem;
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
     background-color: white;
     border-top: 1px solid var(--border-secondary);
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     opacity: 0;
-    transition: opacity 0.1s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 .navbar__submenu section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: .5rem;
+    align-items: start;
+    gap: .25rem;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .navbar__submenu section h2 {
@@ -96,10 +103,58 @@
 }
 
 .navbar__submenu section a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem .5rem;
+    width: 100%;
+    border-radius: 5rem;
     text-decoration: none;
     color: var(--text-tertiary);
+    transition: all 0.15s ease-in-out;
+}
+
+.navbar__submenu section a .img {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+    transform: translateX(-.5rem);
+    transition: all 0.15s ease-in-out;
 }
 
 .navbar__submenu section a:hover {
     color: var(--text-primary);
+    background-color: var(--button-secondary);
+}
+
+.navbar__submenu section a:hover .img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Highlighted sections for the navbar's submenu's sections */
+
+section.highlighted {
+    background-color: var(--bg-tertiary);
+}
+
+section.highlighted a {
+    color: var(--text-primary);
+}
+
+section.highlighted2{
+    background-color: var(--bg-secondary);
+}
+
+section.highlighted2 h2{
+    color: white;
+}
+
+section.highlighted2 a .img {
+    color: white;
+}
+
+section.highlighted2 a:hover {
+    color: white;
+    background-color: var(--bg-tertiary);
 }

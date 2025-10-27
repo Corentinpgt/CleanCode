@@ -37,8 +37,10 @@ footer {
 }
 
 .footer__links section .links a {
+    width: fit-content;
     color: var(--text-tertiary);
     text-decoration: none;
+    transition: all 0.1s ease-in-out;
 }
 
 .footer__links section .links a:hover {

@@ -15,8 +15,8 @@ html {
 }
 
 body {
-  background-color: #f7f7f6;
   margin: 0;
+  background-color: #f7f7f6;
   color: var(--text-primary);
 }
 
@@ -80,4 +80,34 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+section.content {
+  margin-top: 10rem;
+  width: 100%;
+}
+
+
+/* Default font sizes and weights */
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p, a {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
 
